@@ -8,6 +8,7 @@
 * {
     padding: 0;
     margin: 0;
+    /* border: 1px solid red; */
   }
 
   .container {
@@ -19,32 +20,34 @@
 
   .logo {
     background-image: url(odinlogobackground.avif);
-    background-size:  900px 1350px; 
+    background-size:  48vw 150vh; 
     background-color: aqua;
-    background-position: 50% 0%;
+    background-position: 50% 450px;
+    background-repeat: no-repeat;
     width: 100%;
-    height: 100vh;
+    height: 200vh;
     flex: 1 2 auto;
     font-family: norsebold, sans-serif;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 2.2vw;
   }
 
   .logo-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 22%;
+    height: 22vh;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.45);
     margin-bottom: 12vh;
   }
 
   img{
-    width: 6.5vw;
-    height: 19vh;
+    width: 6.46vw;
+    height: 18.7vh;
   }
 
   h1 {
@@ -55,5 +58,84 @@
   .form {
     width: 100%;
     height: 100vh;
-    flex: 1 1.19 auto;
+    flex: 1 1.28 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: sans-serif;
+    margin-top: 400px;
+    padding-left: 20px;
+    box-sizing: border-box;
   }
+
+  .form-title, form > p {
+    font-size: 1.9rem;
+    text-align: center;
+    text-align: left;
+    font-weight: 550;
+  }
+
+  .form-title {
+    margin-bottom: 12vh;
+    height: 20vh;
+  }
+
+  form > p {
+    margin-bottom: 3.5vh;
+  }
+
+  .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5vh;
+    gap: 4vw;
+  }
+
+.form-group > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 20vw;
+    font-size: 1.2rem;
+  }
+
+input {
+  width: 90%;
+  height: 4.5vh;
+  border-radius: 5px;
+  border: 1px solid #e5e7eb;
+}
+
+form > .form-group:last-of-type {
+  margin-bottom: 10vh;
+}
+
+button {
+  width: 25%;
+  height: 6.5vh;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  background-color: #596d48;
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 5vh;
+}
+
+.form-footer {
+  font-size: 1.4rem;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid blue;
+}
+
+#password:invalid, #confirm-password:invalid {
+  border: 1px solid red;
+}
+
+a {
+  text-decoration: none;
+  color: #596d48;
+}
